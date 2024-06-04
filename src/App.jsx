@@ -4,7 +4,7 @@ import Main from './components/Main'
 
 const App = () => {
   return (
-    <div className='flex w-[100%] h-[100%]  bg-gradient-to-tr from-[#ff4066] to-[#fff16a]'>
+    <div className='flex w-screen h-screen bg-gradient-to-tr from-[#ff4066] to-[#fff16a]'>
       <SideNav/>
       <Main/>
     </div>

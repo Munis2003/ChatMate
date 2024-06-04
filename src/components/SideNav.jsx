@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {assets} from '../../src/assets/assets'
+import { Context } from '../context/Context'
 
 const SideNav = () => {
+
+    const {onSet, prevPrompt,setRecentPrompt} = useContext(Context)
+
+    const loadPrompt =  async(prompt) =>{
+        setRecentPrompt(prompt)
+        await onSet(prompt)
+    }
   return (
-    <div className='w-[15%] flex flex-col justify-between h-screen p-3 pr-0 pt-5'>
+    <div className='w-[15%] flex flex-col justify-between p-3 pr-0 pt-5'>
        
         <div className='top-cont'> 
         {/* logo */}
@@ -17,10 +25,15 @@ const SideNav = () => {
 
         {/* Recent */}
         <p className='text-md font-[550] mt-4 text-zinc-100 mb-2'>Recent</p>
-        <div className='flex gap-3  pl-3 border-[1.4px] border-transparent  p-2 rounded-md bg-white/15   '>
-            <i className="ri-message-2-line text-zinc-100 text-[14px] font-[450]"></i>
-            <p className='text-sm font-[450] text-zinc-100'>What is react ...</p>
-        </div>
+        {prevPrompt.map((item)=>{
+            return(
+                <div onClick={()=>loadPrompt(item)} className='flex gap-3  pl-3 border-[1.4px] mb-2 border-transparent  p-2 rounded-md bg-white/15   '>
+                <i className="ri-message-2-line text-zinc-100 text-[14px] font-[450]"></i>
+                <p className='text-sm font-[450] text-zinc-100'>{item.slice(0,18)}...</p>
+                </div>
+            )
+        })}
+      
         </div>  
 
         <div className='bottom-cont'>
