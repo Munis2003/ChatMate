@@ -10,7 +10,7 @@
 }
 
 .text-transparent{
-  background: -webkit-linear-gradient(16deg,#ff4066, #ffc371);
+  background: -webkit-linear-gradient(0deg,#301C4B,white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent ;
 }
@@ -34,3 +34,7 @@
       background-position: 800px 0px;
   }
 } */
+
+#app{
+  background-image: linear-gradient(to right, #301c4b, #271d46, #1e1c40, #181b39, #131a32, #131a32, #131a32, #131a32, #181b39, #1e1c40, #271d46, #301c4b);
+}

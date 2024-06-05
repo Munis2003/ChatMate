@@ -8,7 +8,7 @@ const Main = () => {
 
     const {onSet,recentPrompt,showResult,loading,resultData,input,setInput} = useContext(Context)
   return (
-    <div className='w-[85%] m-3 rounded-2xl bg-white'>
+    <div className='w-[85%] m-3 mr-0 rounded-l-2xl backdrop-blur-xl  border-[1.4px] border-r-0 border-white/15'>
 
        <div className='max-w-[900px] m-auto flex flex-col gap-40'>
         
@@ -16,37 +16,45 @@ const Main = () => {
             ? <>
             <div className=''>
         {/* greet */}
-        <div className='greet mt-[34px] text-[45px] font-[500] text-zinc-900/70'>
-            <p><span className='text-transparent'>Hello, Dev.</span></p>
-            <p>How can I help you today?</p>
+        <div className='greet mt-[34px] flex flex-col items-center'>
+            <img className='w-[100px] mb-2' src="/public/logo.png" alt="" />
+            <p className='text-center text-white  text-[24px] font-medium mb-1'>Experience seamless chatbot interaction with ChatMate</p>
+            <p className=' text-center text-zinc-400 text-sm'>Explore Deeper Insights, Engage in Meaningful Discussions. <br />
+            and Unlock New Possibilities with ChatMate</p>
         </div>
 
         {/* cards */}
-        <div className='cards flex items-center gap-5 mt-32'>
-        <div className='w-52 h-32  border-[1.4px] border-transparent  p-2 bg-zinc-200/50 rounded-xl'>
-            <p></p>
+        <div className='cards flex justify-center items-center mr-12  gap-5 mt-32'>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <i className="ri-disc-line text-[22px]  text-yellow-400"></i>
+        <p className='text-sm text-white/80'>List the diverse music genres worldwide.</p>
         </div>
 
-        <div className='w-52 h-32 bg-gradient-to-br from-[#6157ff] to-[#ee49fd] rounded-xl'>
-            <p></p>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <i className="ri-book-2-line text-[20px]  text-purple-400"></i>
+        <p className='text-sm text-white/80 mt-[2%] '>Any great book recommendation.</p>
         </div>
 
-        <div className='w-52 h-32 bg-gradient-to-br from-[#0172af] to-[#74febd] rounded-xl'>
-            <p></p>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <i className="ri-lightbulb-line text-[20px]  text-blue-300"></i>
+        <p className='text-sm text-white/80 mt-[2%] '>write a story in my favorite genre</p>
         </div>
 
-        <div className='w-52 h-32 bg-gradient-to-tr from-[#103ce7] to-[#64e9ff] rounded-xl'>
-            <p></p>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <i className="ri-shopping-bag-2-line text-[20px] text-pink-300"></i>
+        <p className='text-sm text-white/80 mt-[2%] '>Pick an outfit for my blind date.</p>
         </div>
+
+
         </div>
         </div>
             </> 
 
             :
-            <div id='result' className='result max-h-[400px] py-11 px-[5%] overflow-y-scroll'>
-                <div className='result title flex items-center gap-3 pb-5'>
+            <div id='result' className='result max-h-[400px] w-[100%] max-w-[900px] py-11 overflow-y-scroll'>
+                <div className='result  title flex items-center gap-3 pb-5'>
                     <img className='w-[35px] rounded-full' src={assets.user_icon} alt="" />
-                    <p>{recentPrompt}</p>
+                    <p className='text-white/80 text-sm'>{recentPrompt}</p>
                 </div>
                 <div className='resultData pl-11'>
                     {loading ? <>
@@ -57,7 +65,7 @@ const Main = () => {
                         </div>
                         
                     </>
-                     : <p className='text-[17px] font-[300] leading-[1.8]' dangerouslySetInnerHTML={{__html:resultData}}></p>
+                     : <p className='text-[15px] text-zinc-400 font-[300] leading-[1.8]' dangerouslySetInnerHTML={{__html:resultData}}></p>
                     }
                     
                 </div>
@@ -66,11 +74,15 @@ const Main = () => {
 
         
 
-        <div className='absolute bottom-11 w-[100%] max-w-[900px] '>    
-        <div className='flex items-center gap-3'>
-        <input onChange={(e)=> setInput(e.target.value)} value={input} className='outline-none pl-5 bg-zinc-200/65  w-[99%] p-2 text-zinc-600/70 rounded-full' type="text" placeholder='Hnji phuchiye?' />
-        <i onClick={()=>onSet()} className="ri-send-plane-2-line  text-white py-2 px-3 bg-[#ff4066] rounded-full"></i>
-        </div>
+        <div className='absolute flex items-center text-white/80 gap-3 bottom-11 w-[100%] max-w-[900px]'>     
+        <input 
+        onChange={(e)=> setInput(e.target.value)} 
+        value={input}
+         className='outline-none pl-5 bg-[#353a63]/50  w-[99%] p-2 text-white/80 rounded-md' type="text" 
+         placeholder='Hnji phuchiye?'
+         />
+        <i onClick={()=>onSet()} className=" flex items-center ri-send-plane-2-line hover:bg-[#353a63]/70 py-2 px-3 bg-[#353a63]/50 rounded-md   text-white/80 "></i>
+        
         </div>
         
         </div>
@@ -79,3 +91,6 @@ const Main = () => {
 }
 
 export default Main
+
+
+{/* <span className='text-transparent text-[45px]'>Hello, Dev.</span> */}

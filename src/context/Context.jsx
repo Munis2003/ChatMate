@@ -55,7 +55,7 @@ const ContextProvider = (props) => {
                 newResponse += responseArray[i]
             }
             else{
-                newResponse += "<b>"+ responseArray[i] +"</b>" 
+                newResponse += "<b style='color: white;'>" + responseArray[i] + "</b>";
             }
         }
 
