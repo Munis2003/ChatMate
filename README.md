@@ -10,41 +10,40 @@ Experience the future of communication with ChatMate, your intelligent chatbot c
 # Features 
 
 - Natural Conversations: Engage in smooth, human-like conversations with our advanced chatbot.
-- Genre-wise display: movies can be sorted by genre
-- Trending Movies: displays a section for trending movies
-- Upcoming movies: displays a section for upcoming movies
-- Movie Details: users can view detailed information about each movie
+- Real-Time Interaction : Experience instant responses and interactions.
+- Customizable : Easily customize the chatbot to suit your specific needs and preferences.
+- New Chat : Start a fresh conversation anytime.
+- Go to Previous Prompt : Revisit and continue from previous prompts effortlessly.
 <hr/>
 
 # Technology
 
-SMWZ is built using the following technologies:
+ChatMate is built using the following technologies:
 
 - ReactJS
-- TMDB API
+- Gemini API
 - Context API
-- Filter Search
-- Framer Motion
+- Real-Time Data Handling
+- Interactive UI Design
 
 <hr/>
 
-# How to Run the Website on Your System
+# How to Run the Application on Your System
 
 ## Step 1: Download and Extract the Code
 
-Firstly, download the entire website code and extract the ZIP file to a folder on your local system.
+Firstly, download the entire application code and extract the ZIP file to a folder on your local system.
 
-## Step 2: Obtain the TMDB Movies API Key
+## Step 2: Obtain the Gemini API Key
 
-Before starting the website, you will need to obtain the TMDB Movies API key. Follow these steps to obtain them and add them to your `.env` file.
+Before starting the application, you will need to obtain the Gemini API key. Follow these steps to obtain them and add them to your gemini.jsx file in config folder.
 
-### ▶️ Get TMDB API Key 
+### ▶️ Get Gemini API Key 
 
-- Go to https://www.themoviedb.org/ and log in.
-- Click on your user profile picture in the navigation bar, and select "Settings".
-- In the settings, select "API" and generate an API key.
+- Go to https://aistudio.google.com/app/prompts/new_chat and log in.
+- Navigate to the API section and click on Get API Key.
 
-## Step 3: Run the Website
+## Step 3: Run the Application
 
 Open your code editor (such as VS Code) and navigate to the project directory. Then, open a terminal and run the following command:
 
@@ -53,7 +52,7 @@ npm run dev
 ```
 This will start the application. Open a web browser and navigate to http://localhost:3000 to access the website.
 
-Note: Ensure that you have carefully added the TMDB API key configuration to your .env file. If the .env file is not working, add all the API keys and configuration manually.
+Note: Ensure that you have carefully added the Gemini API key configuration to your gemini.jsx file in config folder.
 
 <hr/>
 
