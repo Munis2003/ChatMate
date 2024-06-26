@@ -13,9 +13,9 @@ const SideNav = () => {
   return (
     <div className='w-[15%] flex flex-col justify-between p-3 pr-0 pt-5'>
        
-        <div className='top-cont'> 
+        <div className='top-cont '> 
         {/* logo */}
-        <a href="/"><img className='w-[80px] mb-2 mt-[-8%] ' src='/public/logo.png' alt="" /></a>
+        <a href="/"><img className='w-[55px] pt-5 mb-5 mt-[-8%] ' src='/public/MD..png' alt="" /></a>
 
         {/* new chat */}
         <div className='new chat flex items-center gap-3 border-[1.4px] border-[#353a63] p-2 pr-3 rounded-md'>

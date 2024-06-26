@@ -17,30 +17,30 @@ const Main = () => {
             <div className=''>
         {/* greet */}
         <div className='greet mt-[34px] flex flex-col items-center'>
-            <img className='w-[100px] mb-2' src="/public/logo.png" alt="" />
+            <img className='w-[60px] mb-2' src="/public/MD..png" alt="" />
             <p className='text-center text-white  text-[24px] font-medium mb-1'>Experience seamless chatbot interaction with ChatMate</p>
             <p className=' text-center text-zinc-400 text-sm'>Explore Deeper Insights, Engage in Meaningful Discussions. <br />
             and Unlock New Possibilities with ChatMate</p>
         </div>
 
         {/* cards */}
-        <div className='cards flex justify-center items-center mr-12  gap-5 mt-32'>
-        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <div className='cards flex justify-center items-center mr-12  gap-5 mt-40'>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 hover:cursor-pointer rounded-xl'>
         <i className="ri-disc-line text-[22px]  text-yellow-400"></i>
         <p className='text-sm text-white/80'>List the diverse music genres worldwide.</p>
         </div>
 
-        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 hover:cursor-pointer rounded-xl'>
         <i className="ri-book-2-line text-[20px]  text-purple-400"></i>
         <p className='text-sm text-white/80 mt-[2%] '>Any great book recommendation.</p>
         </div>
 
-        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 hover:cursor-pointer rounded-xl'>
         <i className="ri-lightbulb-line text-[20px]  text-blue-300"></i>
         <p className='text-sm text-white/80 mt-[2%] '>write a story in my favorite genre</p>
         </div>
 
-        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 rounded-xl'>
+        <div className='w-[18%] h-24  border-[1.2px] p-2 bg-[#353a63]/30 hover:bg-[#353a63]/5 border-white/15 hover:cursor-pointer rounded-xl'>
         <i className="ri-shopping-bag-2-line text-[20px] text-pink-300"></i>
         <p className='text-sm text-white/80 mt-[2%] '>Pick an outfit for my blind date.</p>
         </div>
@@ -58,10 +58,10 @@ const Main = () => {
                 </div>
                 <div className='resultData pl-11'>
                     {loading ? <>
-                        <div className='flex flex-col gap-2 '>
-                              <div className='w-[100%] max-w-[900px] h-4 bg-gradient-to-tr from-[#ff4066] to-[#fff16a] rounded-sm'></div>
-                              <div className='w-[75%] max-w-[900px] h-4 bg-gradient-to-tr from-[#ff4066] to-[#fff16a] rounded-sm'></div>
-                              <div className='w-[50%] max-w-[900px] h-4 bg-gradient-to-tr from-[#ff4066] to-[#fff16a] rounded-sm'></div>
+                        <div className='flex flex-col gap-2 animate-pulse '>
+                              <div className='h-2 bg-[#353a63]/50 rounded'></div>
+                              <div className='h-2 bg-[#353a63]/50 rounded'></div>
+                              <div className='h-2 bg-[#353a63]/50 rounded'></div>
                         </div>
                         
                     </>
