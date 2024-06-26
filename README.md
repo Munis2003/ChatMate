@@ -57,5 +57,5 @@ Note: Ensure that you have carefully added the Gemini API key configuration to y
 <hr/>
 
 # Demo 
-https://github.com/Munis2003/SMWZ-MOVIE-WEBAPP/assets/115029476/8df05338-684f-4208-87d0-a2e59fe0e9d3
+https://github.com/Munis2003/ChatMate/assets/115029476/f8279bae-ef40-4080-927c-5381ddf28218
 
