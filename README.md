@@ -1,6 +1,6 @@
 
 <h1 align="center">Welcome to ChatMate! 🤖</h1>
-Dive into the ultimate movie experience with our sleek and intuitive React-based movie website. Search for movies by title, sort them by genre, or view trending and upcoming movies. SMWZ ensures a user-friendly and visually appealing journey through the world of movies.
+Experience the future of communication with ChatMate, your intelligent chatbot companion. Powered by cutting-edge technology, ChatMate offers seamless, engaging conversations that redefine interaction.
 <hr/>
 
 ![Screenshot 2024-06-25 172658](https://github.com/Munis2003/ChatMate/assets/115029476/c70ab17e-76d1-4cbc-aeac-98420074ae4b)
@@ -9,7 +9,7 @@ Dive into the ultimate movie experience with our sleek and intuitive React-based
 
 # Features 
 
-- Search and watch movies: users can search for movies by title and can watch them easily
+- Natural Conversations: Engage in smooth, human-like conversations with our advanced chatbot.
 - Genre-wise display: movies can be sorted by genre
 - Trending Movies: displays a section for trending movies
 - Upcoming movies: displays a section for upcoming movies
