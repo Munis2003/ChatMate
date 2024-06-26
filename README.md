@@ -1,9 +1,9 @@
 
-<h1 align="center">Welcome to SMWZ! 🌟</h1>
+<h1 align="center">Welcome to ChatMate! 🤖</h1>
 Dive into the ultimate movie experience with our sleek and intuitive React-based movie website. Search for movies by title, sort them by genre, or view trending and upcoming movies. SMWZ ensures a user-friendly and visually appealing journey through the world of movies.
 <hr/>
 
-![SMWZ1](https://github.com/Munis2003/SMWZ-MOVIE-WEBAPP/assets/115029476/3bfe1e92-6466-4a76-842d-9b6ed1da8d67)
+![Screenshot 2024-06-25 172658](https://github.com/Munis2003/ChatMate/assets/115029476/c70ab17e-76d1-4cbc-aeac-98420074ae4b)
 
 <hr/>
 
